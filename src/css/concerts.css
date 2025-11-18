@@ -1,0 +1,124 @@
+.container.concerts{
+    background-color: black;
+    padding: 20px 16px;
+    transition: max-width 0.3s ease, height 0.3s ease;
+    
+}
+.concerts-wrapper{
+    border: 1px solid rgb(65 65 65);
+    background-color: rgb(47 45 45 / 93%);
+    /*padding: 20px 0;*/
+    border-radius: 10px;
+    max-width: 320px;
+    margin: 0 auto;
+
+}
+
+.close-dates{
+    border-bottom: 1px solid rgb(65 65 65);
+    padding: 16px;
+    background-color: rgb(47 51 48 / 66%);
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.dates-list{ 
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 0;
+}
+.dates-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid rgb(65 65 65);
+    padding: 10px 16px;
+    color: white;
+    font-size: 10px;
+    flex-wrap: wrap;
+}
+
+.dates-item > * {
+    flex: 1 1 0;
+    min-width: 60px;
+    word-break: break-word;
+}
+
+.dates-item .places {
+    flex: 2 1 0;
+}
+
+.dates-item .order-tickets {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding: 5px 10px;
+    background: linear-gradient(90deg, #ff2d6d, #ff527a);
+    color: #fff;
+    box-shadow: 0 8px 22px rgba(255, 45, 109, 0.18);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.dates-item .order-tickets:hover,
+.dates-item .order-tickets:active {
+    background: linear-gradient(90deg, #f61a4d, #f81257);
+}
+.dates-item:first-child{
+    background-color: rgb(47 51 48 / 66%);
+    padding: 10px 16px;
+}
+.dates-item:last-child{
+    border-bottom: none;
+}
+
+.dates-item:first-child .order-tickets{
+    visibility: hidden;
+}
+
+@media screen and (min-width: 768px){
+    .container.concerts {
+        width: 768px;
+        padding: 20px 16px;
+    }
+    
+    .concerts-wrapper{
+        max-width: 768px;
+        
+    }
+    
+    .close-dates{
+        text-align: left;
+        padding: 16px 20px;
+    }
+    
+    .dates-item{
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (min-width: 1158px){
+    .container {
+            width: 1158px;
+            
+}
+.container.concerts{ 
+    max-width: 100%;
+    width: 100%;
+}
+    .concerts-wrapper{
+        max-width: 100%;
+    }
+    .dates-item{
+        padding: 10px 130px 10px 20px;
+    }
+    .dates-item:first-child{
+        padding: 10px 130px 10px 20px;
+    }
+   }

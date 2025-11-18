@@ -1,0 +1,20 @@
+<!-- Pop-up для замовлення квитків -->
+<div class="ticket-popup-overlay" id="ticketPopup">
+    <div class="ticket-popup">
+        <button class="popup-close" id="closeTicketPopup">&times;</button>
+        <h3 class="popup-title">Замовлення квитка</h3>
+        <div class="popup-content">
+            <ul class="event-info">
+                <li><strong>Концерт:</strong> <span id="eventName"></span></li>
+                <li><strong>Дата:</strong> <span id="eventDate"></span></li>
+                <li><strong>Місце:</strong> <span id="eventPlace"></span></li>
+            </ul>
+            <form id="ticketForm">
+                <input type="text" name="name" placeholder="Ваше ім'я" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="number" name="tickets" placeholder="Кількість квитків" min="1" max="10" required>
+                <button type="submit" class="submit-btn">Замовити</button>
+            </form>
+        </div>
+    </div>
+</div>

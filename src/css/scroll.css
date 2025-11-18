@@ -1,0 +1,39 @@
+/* Стили для кнопки прокрутки вверх */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 36px;
+    height: 36px;
+    background-color: rgb(47 45 45 / 93%);
+    color: rgb(255 255 255 / 50%);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(47, 45, 45, 0.4);
+    z-index: 1000;
+}
+
+.scroll-to-top:hover {
+    background-color: rgb(47 45 45 / 93%);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(47, 45, 45, 0.6);
+}
+
+.scroll-to-top:active {
+    transform: translateY(-1px);
+}
+
+.scroll-to-top.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100px);
+}

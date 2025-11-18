@@ -1,0 +1,133 @@
+
+
+/*close btn*/
+.item-6 {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 1001;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+}
+
+.item-6:before,
+.item-6:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 40%;
+    background-color: #FFF;
+    transition: width 0.2s ease-out;
+}
+
+.item-6:before {
+    transform: rotate(45deg);
+    left: 5px;
+    top: 5px;
+    transform-origin: left;
+}
+
+.item-6:after {
+    transform: rotate(-45deg);
+    right: 5px;
+    top: 5px;
+    transform-origin: right;
+}
+
+.item-6 .inner {
+    color: #FFF;
+}
+
+.item-6 .inner:before,
+.item-6 .inner:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 40%;
+    background-color: #FFF;
+    transition: width 0.2s ease-out;
+}
+
+.item-6 .inner:before {
+    transform: rotate(45deg);
+    transform-origin: right;
+    bottom: 5px;
+    right: 5px;
+}
+
+.item-6 .inner:after {
+    transform: rotate(-45deg);
+    transform-origin: left;
+    bottom: 5px;
+    left: 5px;
+}
+
+.item-6 .label {
+    opacity: 0;
+    transition: all 0.2s ease-out;
+}
+
+.item-6:focus:before,
+.item-6:focus:after,
+.item-6:hover:before,
+.item-6:hover:after {
+    width: 10px;
+}
+
+.item-6:focus .inner:before,
+.item-6:focus .inner:after,
+.item-6:hover .inner:before,
+.item-6:hover .inner:after {
+    width: 10px;
+}
+
+.item-6:focus .label,
+.item-6:hover .label {
+    opacity: 1;
+}
+
+/*the end of btn*/
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    background-color: black;
+    padding: 16px;
+    
+    opacity: 0;
+    pointer-events: none;
+}
+.modal-overlay.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-box {
+background-color: black;
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}   
+
+.modal-nav-list{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.modal-css{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
