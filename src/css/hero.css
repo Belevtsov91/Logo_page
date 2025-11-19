@@ -73,8 +73,9 @@
         }
         .container.hero{
             max-width: 100%;
+            width: 100%;
             height: 600px;
-            padding: 100px 16px 100px 20px;
+            padding: 100px 130px;
         }
         .hero-title{
             font-size: -webkit-xxx-large;

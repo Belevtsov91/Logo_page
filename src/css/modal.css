@@ -118,7 +118,9 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-
+max-width: 100%;
+width: 100%;
+margin: 0 auto;
 }   
 
 .modal-nav-list{
@@ -130,4 +132,7 @@ align-items: center;
     position: absolute;
     top: 16px;
     right: 16px;
+}
+.container.modal-overlay{
+    width: 100%;
 }

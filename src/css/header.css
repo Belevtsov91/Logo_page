@@ -199,3 +199,14 @@
             min-height: 50px;
         }
 }
+
+@media screen and (min-width: 1158px){
+    .container {
+            width: 1158px;
+        }
+    .container.new-start{
+        max-width: 100%;
+        width: 100%;
+        padding: 20px 130px;
+    }
+}

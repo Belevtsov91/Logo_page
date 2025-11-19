@@ -45,6 +45,14 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+// Закрытие при изменении размера экрана на >= 768px
+window.addEventListener('resize', () => {
+    const modalOverlay = document.querySelector('.modal-overlay');
+    if (window.innerWidth >= 768 && modalOverlay && modalOverlay.classList.contains('is-open')) {
+        closeModal();
+    }
+});
+
 // Функция закрытия
 function closeModal() {
     const modalOverlay = document.querySelector('.modal-overlay');

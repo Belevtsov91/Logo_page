@@ -15,6 +15,7 @@
 }
 .link{
     position: relative;
+    margin-top: 15px;
 }
 .link::before{
     content: "•";
@@ -79,6 +80,16 @@
             flex-direction: row;
             gap: 15px;
         }
+        .link{
+            margin-top: 0;
+        }
+        .footer-box{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            gap: 170px;
+        }
 }
 
 @media screen and (min-width: 1158px){
@@ -94,7 +105,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 12px;
+            margin-bottom: 25px;
+            padding-top: 20px;
         }
         
 }
